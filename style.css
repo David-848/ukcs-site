@@ -1,0 +1,176 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    width: 1366px;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    height: 50px;
+}
+
+section .top-bar{
+    background-color: rgb(20, 160, 146);
+    width: 1366px;
+    height: 50px;
+    color: white;
+    position: fixed;
+    z-index: 4;
+}
+
+.top-bar a{
+    text-decoration: none;
+    color: white;
+}
+
+.img{
+    text-decoration: blue;
+}
+
+.top-bar-left{
+    float: left;
+    
+    padding-left: 100px;
+}
+
+.top-bar-right{
+    float: right;
+    height: 50px;
+    padding-top: 15px;
+    padding-right: 70px;
+}
+
+/*-------------------------------------------Nav----------------------------------------------------*/
+
+.Nav{
+    height: 100px;
+}
+.nav-bar{
+    float: inline-start;
+    height: 0;
+    margin-left: 100px;
+    background-color: white;
+    
+}
+
+.logo{
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.nav-bar-link{
+    float: right;
+    padding-top: 20px;
+}
+
+.nav-bar-link a{
+    color: black;
+    font-style: normal;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 0  10px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.nav-bar-link a:hover{
+    color:rgb(20, 160, 146);
+    border: solid 0.1px #fff;
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+/*---------------------------------------------SEARCH-BAR-----------------------------------------*/
+
+.search-bar{
+    position: relative;
+    height: 380px;
+    background:
+        center top / cover url("imagejpg/octavian-rosca-UfCYo7zHyY8-unsplash.jpg") fixed;
+    color: white;
+}
+
+.text{
+    height: 0px;
+    margin-left: 200px;
+    width: 200px;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.search{
+    position: absolute;
+    top: 20px;
+    left: 550px;
+    padding-top: 60px;
+}
+
+.search h2{
+    padding-left: 150px;
+    font-size: 30px;
+}
+.search-bar-boutton{
+    width: 570px;
+    border-radius: 10px;
+}
+
+.recherche{
+    height: 40px;
+    width: 450px;
+    font-size: 15px;
+    color: black;
+    font-weight:normal;
+    border-radius: 30px;
+    border: none;
+}
+
+.boutton{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background: rgb(20, 160, 146);
+    cursor: pointer;
+}
+
+/*-------------------------------------ADMIDDION----------------------------------------------------*/
+
+.admission{
+    background-color: rgba(2, 22, 22, 0.884);
+    position: relative;
+    color: white;
+    height: 230px;
+    font-family: sans-serif;
+}
+
+.adm-logo{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.adm{
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    width: 800px
+}
+
+.adm-text{
+    padding-bottom: 20px;
+}
+
+.adm-link{
+    color: white;
+}
+
+.adm-link a{
+    color: white;
+    background-color: rgb(5, 5, 77);
+    border: solid 0.5px #fff ;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.adm-link a:hover{
+    background-color: rgb(20, 160, 146);
+}
