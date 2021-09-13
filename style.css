@@ -1,3 +1,5 @@
+@import url("unv.css");
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -41,7 +43,6 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
     text-align: left;
     background-color: #fff;
 }
@@ -93,7 +94,8 @@ section .top-bar{
     height: 0;
     margin-left: 100px;
     background-color: white;
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -129,8 +131,10 @@ section .top-bar{
     position: relative;
     height: 380px;
     background:
-        center top / cover url("imagejpg/octavian-rosca-UfCYo7zHyY8-unsplash.jpg") fixed;
+        linear-gradient(to bottom, #000,#0008, #0008, #000),
+        center top / cover url("imagejpg/back.jpg") fixed;
     color: white;
+    
 }
 
 .text{
@@ -279,14 +283,14 @@ section .top-bar{
     padding-bottom: 0px;
     padding-left: 150px;
     padding-top: 30px;
-    color: #223268;
+    color: #223268 !important;
     letter-spacing: 1px;
 }
 
 .mission-title::after{
     content: ' ';
     position: absolute;
-    background-color: #223268;
+    background-color: #223268 !important;
     width: 119px;
     height: 4px;
     bottom: 20px;
@@ -634,4 +638,190 @@ img {
         border-left-style: none;
     max-width: 100% !important;
     vertical-align: middle;
+}
+
+
+/*-----------------------------------------------WELCOM-STUDENT---------------------------------------*/
+
+.section-gap {
+    margin-top: 70px;
+    color: #00115a;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.country-section h5 span, .news h5 span {
+    color: #dc3127;
+    font-family: 'arial', serif;
+}
+
+.col-xs-6 {
+    width: 50%;
+    padding: 0;
+}
+.col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.course-category {
+    display: block;
+    background-color: #5b626b;
+    color: #fff;
+    padding: 30px 20px 30px 20px;
+    margin: 10px 15px 10px 15px;
+    height: 150px;
+    line-height: 110%;
+    background-image: linear-gradient( 20deg , #000000c7, #97454500);
+    opacity: 0.9;
+    background-color: #2c4e85;
+}
+
+.course_category_home {
+    color: #fff;
+}
+a {
+    color: #002568;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.course-category p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.course-category img {
+    margin: 10px 0;
+    padding: 0;
+}
+
+
+/*----------------------------------------------EDUCATION AGENCY------------------------------------------*/
+
+.gap {
+    margin-bottom: 70px;
+}
+
+section {
+    display: block;
+}
+
+.informationsect {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 60px 0px;
+    background-color: #232F3E;
+    background: url("imagejpg/compa.jpg");
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-attachment: scroll;
+        background-size: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.informationsect::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    content: "";
+    background: rgb(1 45 110 / 68%);
+    background: rgb(0 0 0 / 50%);
+}
+
+.head-txt {
+    color: #fff;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.whborderbottom {
+    border-bottom: 1px solid #fff;
+}
+.whborderright {
+    border-right: 1px solid #fff;
+}
+
+
+.head-txt h5 {
+    font-size: 30px ;
+    color: white;
+}
+
+.head-txt p {
+    width: 45%;
+    margin: 10px auto;
+    font-size: 20px;
+    color: white;
+}
+
+.p-5 {
+    padding: 3rem;
+}
+
+.informationsect h4 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    text-rendering: optimizelegibility;
+}
+.dwn-txt {
+    font-size: 20px;
+    color: white !important;
+}
+
+
+/*------------------------------------------------------------FOUTER-----------------------------------------*/
+
+.copyright-text {
+    background-color: #131A22;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.copyright-text p {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+.copyright-text p {
+    margin-top: 0;
+    margin-bottom: 0px !important;
 }

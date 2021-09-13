@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UKCS site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!----------------------------Top_Bar------------------------------------------------->
+    <section class="top">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <p>
+                    <img class="img" src="image/phone.svg">
+                    May I help you: <img class="img" src="image/envelope.svg">
+                    <a href ="email:info@totalstudentcare.com">info@totalstudentcare.com</a>
+                </p>
+            </div>
+            <div class="top-bar-right">
+                <a href="sign_in">Sign-in</a>
+                <a href="sign_up">Singn-up</a>
+                <a href="www.faceboock.com"><img class="img" src="image/facebook.svg"> </a>
+                <a href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQElam6BE9VhKAAAAXvEnoforQWDrzOomU45Bk7uNmcTop_hr3fkZBZ4IYFio01bHIrsS_91tEeeNXfbZt6QeVyxPVm4n0-EkX0IFVsvp5TI3MHY4SNg8r2fOfHCQnM8YSgSQrc=&originalReferer=https://www.totalstudentcare.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ftotal-student-care-tsc-%3Ftrk%3Dnav_account_sub_nav_company_admin"><img class="img" src="image/linkedin.svg"> </a>
+                <a href="https://plus.google.com/+Totalstudentcare/"><img class="img" src="image/google.svg"> </a>
+                <a href="https://twitter.com/tostudentcare"><img class="img" src="image/twitter.svg"> </a>
+            </div>
+        </div>
+    </section>
+    <!--- ----------------------- Nav --------------------------------------------------->
+    <section class="Nav">
+        <div class="nav-bar">
+            <a href="index.html"><img class="logo" src="imagejpg/logo.png" width="90px" height="70px" > </a>
+            <div class="nav-bar-link">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="cours.html">COURSES</a>
+                <a href="university.html">UNIVERSITIES</a>
+                <a href="associete.html">ASSOCIETES</a>
+                <a href="document.html">DOCUMENTS</a>
+                <a href="student.html">STUDENT SERVICE</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </section>
+    </body>
+    </html>
+
+    <!----------------------------UNIVERSITY------------------------------------------------>
+
+
+                        <div class="col-md-12">
+                            <!--Product Grid Start-->
+                            <div class="product-list">
+
+                                <form action="" method="post" name="frmuniversitylist" id="frmuniversitylist" style="width: 100%; float: left; position: relative;">
+                                <!-- <div class="col-md-6">  -->
+                                   <div class="col-md-3">
+                                <select name="listing_type" id="listing_type" class="form-control">
+                                      <option value="" selected="">--Any--</option>
+                                      <option value="university">University</option>
+                                      <option value="college">College</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select name="location_parent_id" id="location_parent_id" class="form-control" onchange="callCities(this.value)">
+                                      <!-- <option value="">Select Country</option> -->
+                                                                              <option value="9" selected="">United Kingdom</option>
+                                                                             <option value="7">India</option>
+                                                                             <option value="8">United States</option>
+                                                                             <option value="20">Bangladesh</option>
+                                                                             <option value="24">Canada</option>
+                                                                             <option value="25">Australia</option>
+                                                                             <option value="26">France</option>
+                                                                             <option value="27">Ireland</option>
+                                                                             <option value="28">Italy</option>
+                                                                             <option value="60">Mauritius</option>
+                                                                             <option value="71">Malta</option>
+                                                                             <option value="83">Nigeria</option>
+                                    </select>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="city_list">
+                                <select name="location_id" id="location_id" class="form-control" onchange="">
+                                      <option value="">Select City</option>
+                                                                                  <option value="12">London</option>
+                                                                                 <option value="13">Birmingham</option>
+                                                                                 <option value="14">Cambridge</option>
+                                                                                 <option value="17">Oxford</option>
+                                                                                 <option value="22">Bedford</option>
+                                                                                 <option value="23">Sunderland</option>
+                                                                                 <option value="29">Newcastle</option>
+                                                                                 <option value="30">Brighton</option>
+                                                                                 <option value="31">Bangor</option>
+                                                                                 <option value="32">Chelmsford</option>
+                                                                                 <option value="33">Peterborough</option>
+                                                                                 <option value="34">Norwich</option>
+                                                                                 <option value="35">Scotland</option>
+                                                                                 <option value="36">Northampton</option>
+                                                                                 <option value="37">Wales</option>
+                                                                                 <option value="38">Cardiff</option>
+                                                                                 <option value="39">Newport</option>
+                                                                                 <option value="40">Pontypridd</option>
+                                                                                 <option value="41">Paisley</option>
+                                                                                 <option value="42">Ayr</option>
+                                                                                 <option value="43">Hamilton</option>
+                                                                                 <option value="44">Dumfries</option>
+                                                                                 <option value="45">Bristol</option>
+                                                                                 <option value="46">Chester</option>
+                                                                                 <option value="47">Guildford</option>
+                                                                                 <option value="48">Manchester</option>
+                                                                                 <option value="49">Leeds</option>
+                                                                                 <option value="50">Croydon</option>
+                                                                                 <option value="51">Liverpool</option>
+                                                                                 <option value="52">Essex</option>
+                                                                                 <option value="53">Luton</option>
+                                                                                 <option value="54">Milton Keynes</option>
+                                                                                 <option value="55">Putteridge Bury</option>
+                                                                                 <option value="56">Aylesbury</option>
+                                                                                 <option value="62">Preston</option>
+                                                                                 <option value="63">Eastbourne</option>
+                                                                                 <option value="64">Hastings</option>
+                                                                                 <option value="66">Burnley</option>
+                                                                                 <option value="67">Cumbria</option>
+                                                                                 <option value="69">Belfast</option>
+                                                                                 <option value="70">Ipswich</option>
+                                                                                 <option value="72">Leicester</option>
+                                                                                 <option value="73">Derby</option>
+                                                                                 <option value="74">Suffolk</option>
+                                                                                 <option value="76">Plymouth</option>
+                                                                                 <option value="77">Middlesbrough</option>
+                                                                                 <option value="78">Teesside</option>
+                                                                                 <option value="79">Colchester</option>
+                                                                                 <option value="80">Southampton</option>
+                                                                                 <option value="81">Kent</option>
+                                                                                 <option value="82">Cheltenham</option>
+                                                                                 
+                                  
+                                      
+                                </select>
+                                </div>
+                              </div>
+                              <div class="col-md-3"><input type="Submit" name="filter" value="Filter" class="btn btn-primary" style="width: 100%"> </div>
+                           </form>   
+                            
+                           <!--  <h2 class="title_heading2">university</h2>-->
+                              
+                                                              
+                              <div class="col-md-6">
+                                  <div class="list_box">
+                                   <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="col-md-12">
+                                              <div class="logoBx">
+                                                                                                             <img src="https://www.totalstudentcare.com/uploades/institution/original/Bangor-University.jpg" alt="Bangor University" itemprop="image" style="width: 300px;height: 180px;"> 
+                                                                                                 </div>
+                                              
+                                                 <h4 style="text-align: center;"><a href="https://www.totalstudentcare.com/university-and-college/en-gb/bangor/bangor-university/">Bangor University</a></h4>
+                                              
+                                              
+                                              <div class="col-md-12">
+                                                     <table class="table table-bordered">
+                                                         <tbody><tr>
+                                                             <td>Main Camplus Location</td>
+                                                             <td>Bangor, United Kingdom</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>About Bangor University</td>
+                                                             <td> <a class="" href="https://www.totalstudentcare.com/university-and-college/en-gb/bangor/bangor-university/">View Profile</a></td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Scholarships</td>
+                                                             <td>Available</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Find Courses</td>
+                                                             <td><a href="https://www.totalstudentcare.com/university-and-college/bangor-university/courses/en-gb/">View all (0)</a></td>
+                                                         </tr>
+                                                         <!-- <tr>
+                                                             <td>Submit Query</td>
+                                                             <td><a href="">Link</a></td>
+                                                         </tr> -->
+                                                     </tbody></table>
+                                                 </div>
+                                              
+                                           </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              
+<!--                                 <div class="list_box">
+                                  <div class="row clearfix">
+                                      <div class="col-md-8">
+                                  <h2><a href="https://www.totalstudentcare.com/university-and-college/en-gb/bangor/bangor-university/">Bangor University</a></h2>
+                                  </div>
+                                  <div class="col-md-4 text-right">
+                                   <a href="https://www.totalstudentcare.com/university-and-college/bangor-university/courses/en-gb/">View all courses (0)</a>
+                                  </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      
+                                                                                    <div class="col-md-4">
+                                                 <img src="https://www.totalstudentcare.com/uploades/institution/original/Bangor-University.jpg" alt="Bangor University" itemprop="image" /> 
+                                           </div>
+                                                                                 
+                                       <div class="col-md-8">
+                                       <div class="text-left">
+                                           <a class="btn btn-info" href="javascript:void(0)">University</a>
+                                       
+                                           <a class="btn btn-gray" href="javascript:void(0)">United Kingdom</a>
+                                           <a class="btn btn-gray" href="javascript:void(0)">Bangor</a>
+                                           
+                                       </div>
+                                       <div class="list_descreption">
+                                      Situated between the mountain and the sea, Bangor University is surrounded by the scenic beauty of Wales that adds a different dimension to student life. Founded in 1884, Bangor has the &ldquo;Best UK University setting&rdquo; according to &lsquo;The...
+                                       </div>
+                                       <div class="text-right">
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/bangor-university/course-popular/en-gb/">Popular Course</a>
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/en-gb/bangor/bangor-university/">View Profile</a>
+                                       </div>
+                                      </div>
+                                  </div>
+                                  </div> -->
+                                                              
+                              <div class="col-md-6">
+                                  <div class="list_box">
+                                   <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="col-md-12">
+                                              <div class="logoBx">
+                                                                                                             <img src="https://www.totalstudentcare.com/uploades/institution/original/Birmingham-City-University2.jpg" alt="Birmingham City University" itemprop="image" style="width: 300px;height: 180px;"> 
+                                                                                                 </div>
+                                              
+                                                 <h4 style="text-align: center;"><a href="https://www.totalstudentcare.com/university-and-college/en-gb/birmingham/birmingham-city-university/">Birmingham City University</a></h4>
+                                              
+                                              
+                                              <div class="col-md-12">
+                                                     <table class="table table-bordered">
+                                                         <tbody><tr>
+                                                             <td>Main Camplus Location</td>
+                                                             <td>Birmingham, United Kingdom</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>About Birmingham City University</td>
+                                                             <td> <a class="" href="https://www.totalstudentcare.com/university-and-college/en-gb/birmingham/birmingham-city-university/">View Profile</a></td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Scholarships</td>
+                                                             <td>Available</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Find Courses</td>
+                                                             <td><a href="https://www.totalstudentcare.com/university-and-college/birmingham-city-university/courses/en-gb/">View all (553)</a></td>
+                                                         </tr>
+                                                         <!-- <tr>
+                                                             <td>Submit Query</td>
+                                                             <td><a href="">Link</a></td>
+                                                         </tr> -->
+                                                     </tbody></table>
+                                                 </div>
+                                              
+                                           </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              
+<!--                                 <div class="list_box">
+                                  <div class="row clearfix">
+                                      <div class="col-md-8">
+                                  <h2><a href="https://www.totalstudentcare.com/university-and-college/en-gb/birmingham/birmingham-city-university/">Birmingham City University</a></h2>
+                                  </div>
+                                  <div class="col-md-4 text-right">
+                                   <a href="https://www.totalstudentcare.com/university-and-college/birmingham-city-university/courses/en-gb/">View all courses (553)</a>
+                                  </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      
+                                                                                    <div class="col-md-4">
+                                                 <img src="https://www.totalstudentcare.com/uploades/institution/original/Birmingham-City-University2.jpg" alt="Birmingham City University" itemprop="image" /> 
+                                           </div>
+                                                                                 
+                                       <div class="col-md-8">
+                                       <div class="text-left">
+                                           <a class="btn btn-info" href="javascript:void(0)">University</a>
+                                       
+                                           <a class="btn btn-gray" href="javascript:void(0)">United Kingdom</a>
+                                           <a class="btn btn-gray" href="javascript:void(0)">Birmingham</a>
+                                           
+                                       </div>
+                                       <div class="list_descreption">
+                                      Birmingham City University (BCU) successfully combines innovative teaching and learning, sector-leading student support and effective partnerships with some of the country&rsquo;s leading employers.
+
+Birmingham City University is made up of&nbsp;fo...
+                                       </div>
+                                       <div class="text-right">
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/birmingham-city-university/course-popular/en-gb/">Popular Course</a>
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/en-gb/birmingham/birmingham-city-university/">View Profile</a>
+                                       </div>
+                                      </div>
+                                  </div>
+                                  </div> -->
+                                                              
+                              <div class="col-md-6">
+                                  <div class="list_box">
+                                   <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="col-md-12">
+                                              <div class="logoBx">
+                                                                                                             <img src="https://www.totalstudentcare.com/uploades/institution/original/3.jpg" alt="BPP University" itemprop="image" style="width: 300px;height: 180px;"> 
+                                                                                                 </div>
+                                              
+                                                 <h4 style="text-align: center;"><a href="https://www.totalstudentcare.com/university-and-college/en-gb/london/bpp-university/">BPP University</a></h4>
+                                              
+                                              
+                                              <div class="col-md-12">
+                                                     <table class="table table-bordered">
+                                                         <tbody><tr>
+                                                             <td>Main Camplus Location</td>
+                                                             <td>London, United Kingdom</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>About BPP University</td>
+                                                             <td> <a class="" href="https://www.totalstudentcare.com/university-and-college/en-gb/london/bpp-university/">View Profile</a></td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Scholarships</td>
+                                                             <td>Available</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Find Courses</td>
+                                                             <td><a href="https://www.totalstudentcare.com/university-and-college/bpp-university/courses/en-gb/">View all (39)</a></td>
+                                                         </tr>
+                                                         <!-- <tr>
+                                                             <td>Submit Query</td>
+                                                             <td><a href="">Link</a></td>
+                                                         </tr> -->
+                                                     </tbody></table>
+                                                 </div>
+                                              
+                                           </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              
+<!--                                 <div class="list_box">
+                                  <div class="row clearfix">
+                                      <div class="col-md-8">
+                                  <h2><a href="https://www.totalstudentcare.com/university-and-college/en-gb/london/bpp-university/">BPP University</a></h2>
+                                  </div>
+                                  <div class="col-md-4 text-right">
+                                   <a href="https://www.totalstudentcare.com/university-and-college/bpp-university/courses/en-gb/">View all courses (39)</a>
+                                  </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      
+                                                                                    <div class="col-md-4">
+                                                 <img src="https://www.totalstudentcare.com/uploades/institution/original/3.jpg" alt="BPP University" itemprop="image" /> 
+                                           </div>
+                                                                                 
+                                       <div class="col-md-8">
+                                       <div class="text-left">
+                                           <a class="btn btn-info" href="javascript:void(0)">University</a>
+                                       
+                                           <a class="btn btn-gray" href="javascript:void(0)">United Kingdom</a>
+                                           <a class="btn btn-gray" href="javascript:void(0)">London</a>
+                                           
+                                       </div>
+                                       <div class="list_descreption">
+                                      BPP University known as University for the Professions is a private university specialising in law, business, finance, accountancy, banking, technology, chiropractic, dentistry, nursing, psychology and healthcare. The university is a UK degree-awardi...
+                                       </div>
+                                       <div class="text-right">
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/bpp-university/course-popular/en-gb/">Popular Course</a>
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/en-gb/london/bpp-university/">View Profile</a>
+                                       </div>
+                                      </div>
+                                  </div>
+                                  </div> -->
+                                                              
+                              <div class="col-md-6">
+                                  <div class="list_box">
+                                   <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="col-md-12">
+                                              <div class="logoBx">
+                                                                                                             <img src="https://www.totalstudentcare.com/uploades/institution/original/David-Game-College.jpg" alt="David Game College" itemprop="image" style="width: 300px;height: 180px;"> 
+                                                                                                 </div>
+                                              
+                                                 <h4 style="text-align: center;"><a href="https://www.totalstudentcare.com/university-and-college/en-gb/london/david-game-college/">David Game College</a></h4>
+                                              
+                                              
+                                              <div class="col-md-12">
+                                                     <table class="table table-bordered">
+                                                         <tbody><tr>
+                                                             <td>Main Camplus Location</td>
+                                                             <td>London, United Kingdom</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>About David Game College</td>
+                                                             <td> <a class="" href="https://www.totalstudentcare.com/university-and-college/en-gb/london/david-game-college/">View Profile</a></td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Scholarships</td>
+                                                             <td>Available</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Find Courses</td>
+                                                             <td><a href="https://www.totalstudentcare.com/university-and-college/david-game-college/courses/en-gb/">View all (0)</a></td>
+                                                         </tr>
+                                                         <!-- <tr>
+                                                             <td>Submit Query</td>
+                                                             <td><a href="">Link</a></td>
+                                                         </tr> -->
+                                                     </tbody></table>
+                                                 </div>
+                                              
+                                           </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              
+<!--                                 <div class="list_box">
+                                  <div class="row clearfix">
+                                      <div class="col-md-8">
+                                  <h2><a href="https://www.totalstudentcare.com/university-and-college/en-gb/london/david-game-college/">David Game College</a></h2>
+                                  </div>
+                                  <div class="col-md-4 text-right">
+                                   <a href="https://www.totalstudentcare.com/university-and-college/david-game-college/courses/en-gb/">View all courses (0)</a>
+                                  </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      
+                                                                                    <div class="col-md-4">
+                                                 <img src="https://www.totalstudentcare.com/uploades/institution/original/David-Game-College.jpg" alt="David Game College" itemprop="image" /> 
+                                           </div>
+                                                                                 
+                                       <div class="col-md-8">
+                                       <div class="text-left">
+                                           <a class="btn btn-info" href="javascript:void(0)">College</a>
+                                       
+                                           <a class="btn btn-gray" href="javascript:void(0)">United Kingdom</a>
+                                           <a class="btn btn-gray" href="javascript:void(0)">London</a>
+                                           
+                                       </div>
+                                       <div class="list_descreption">
+                                      ...
+                                       </div>
+                                       <div class="text-right">
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/david-game-college/course-popular/en-gb/">Popular Course</a>
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/en-gb/london/david-game-college/">View Profile</a>
+                                       </div>
+                                      </div>
+                                  </div>
+                                  </div> -->
+                                                              
+                              <div class="col-md-6">
+                                  <div class="list_box">
+                                   <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="col-md-12">
+                                              <div class="logoBx">
+                                                                                                             <img src="https://www.totalstudentcare.com/uploades/institution/original/download.jpg" alt="De Montfort University" itemprop="image" style="width: 300px;height: 180px;"> 
+                                                                                                 </div>
+                                              
+                                                 <h4 style="text-align: center;"><a href="https://www.totalstudentcare.com/university-and-college/en-gb/leicester/de-montfort-university/">De Montfort University</a></h4>
+                                              
+                                              
+                                              <div class="col-md-12">
+                                                     <table class="table table-bordered">
+                                                         <tbody><tr>
+                                                             <td>Main Camplus Location</td>
+                                                             <td>Leicester, United Kingdom</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>About De Montfort University</td>
+                                                             <td> <a class="" href="https://www.totalstudentcare.com/university-and-college/en-gb/leicester/de-montfort-university/">View Profile</a></td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Scholarships</td>
+                                                             <td>Available</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Find Courses</td>
+                                                             <td><a href="https://www.totalstudentcare.com/university-and-college/de-montfort-university/courses/en-gb/">View all (0)</a></td>
+                                                         </tr>
+                                                         <!-- <tr>
+                                                             <td>Submit Query</td>
+                                                             <td><a href="">Link</a></td>
+                                                         </tr> -->
+                                                     </tbody></table>
+                                                 </div>
+                                              
+                                           </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              
+<!--                                 <div class="list_box">
+                                  <div class="row clearfix">
+                                      <div class="col-md-8">
+                                  <h2><a href="https://www.totalstudentcare.com/university-and-college/en-gb/leicester/de-montfort-university/">De Montfort University</a></h2>
+                                  </div>
+                                  <div class="col-md-4 text-right">
+                                   <a href="https://www.totalstudentcare.com/university-and-college/de-montfort-university/courses/en-gb/">View all courses (0)</a>
+                                  </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      
+                                                                                    <div class="col-md-4">
+                                                 <img src="https://www.totalstudentcare.com/uploades/institution/original/download.jpg" alt="De Montfort University" itemprop="image" /> 
+                                           </div>
+                                                                                 
+                                       <div class="col-md-8">
+                                       <div class="text-left">
+                                           <a class="btn btn-info" href="javascript:void(0)">University</a>
+                                       
+                                           <a class="btn btn-gray" href="javascript:void(0)">United Kingdom</a>
+                                           <a class="btn btn-gray" href="javascript:void(0)">Leicester</a>
+                                           
+                                       </div>
+                                       <div class="list_descreption">
+                                      De Montfort University, Leicester - a TEF Gold rated university.
+...
+                                       </div>
+                                       <div class="text-right">
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/de-montfort-university/course-popular/en-gb/">Popular Course</a>
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/en-gb/leicester/de-montfort-university/">View Profile</a>
+                                       </div>
+                                      </div>
+                                  </div>
+                                  </div> -->
+                                                              
+                              <div class="col-md-6">
+                                  <div class="list_box">
+                                   <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="col-md-12">
+                                              <div class="logoBx">
+                                                                                                             <img src="https://www.totalstudentcare.com/uploades/institution/original/Middlesex-University-Logo_s-1-1-600x400.jpg" alt="Middlesex University " itemprop="image" style="width: 300px;height: 180px;"> 
+                                                                                                 </div>
+                                              
+                                                 <h4 style="text-align: center;"><a href="https://www.totalstudentcare.com/university-and-college/en-gb/london/middlesex-university-/">Middlesex University </a></h4>
+                                              
+                                              
+                                              <div class="col-md-12">
+                                                     <table class="table table-bordered">
+                                                         <tbody><tr>
+                                                             <td>Main Camplus Location</td>
+                                                             <td>London, United Kingdom</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>About Middlesex University </td>
+                                                             <td> <a class="" href="https://www.totalstudentcare.com/university-and-college/en-gb/london/middlesex-university-/">View Profile</a></td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Scholarships</td>
+                                                             <td>Available</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Find Courses</td>
+                                                             <td><a href="https://www.totalstudentcare.com/university-and-college/middlesex-university-/courses/en-gb/">View all (0)</a></td>
+                                                         </tr>
+                                                         <!-- <tr>
+                                                             <td>Submit Query</td>
+                                                             <td><a href="">Link</a></td>
+                                                         </tr> -->
+                                                     </tbody></table>
+                                                 </div>
+                                              
+                                           </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              
+<!--                                 <div class="list_box">
+                                  <div class="row clearfix">
+                                      <div class="col-md-8">
+                                  <h2><a href="https://www.totalstudentcare.com/university-and-college/en-gb/london/middlesex-university-/">Middlesex University </a></h2>
+                                  </div>
+                                  <div class="col-md-4 text-right">
+                                   <a href="https://www.totalstudentcare.com/university-and-college/middlesex-university-/courses/en-gb/">View all courses (0)</a>
+                                  </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      
+                                                                                    <div class="col-md-4">
+                                                 <img src="https://www.totalstudentcare.com/uploades/institution/original/Middlesex-University-Logo_s-1-1-600x400.jpg" alt="Middlesex University " itemprop="image" /> 
+                                           </div>
+                                                                                 
+                                       <div class="col-md-8">
+                                       <div class="text-left">
+                                           <a class="btn btn-info" href="javascript:void(0)">University</a>
+                                       
+                                           <a class="btn btn-gray" href="javascript:void(0)">United Kingdom</a>
+                                           <a class="btn btn-gray" href="javascript:void(0)">London</a>
+                                           
+                                       </div>
+                                       <div class="list_descreption">
+                                      Middlesex University is a modern and forward-thinking university offering career focussed courses to prepare students for the world of work.
+
+The university equips students with in-depth knolwdge and transferable skills so that graduates&rsquo; per...
+                                       </div>
+                                       <div class="text-right">
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/middlesex-university-/course-popular/en-gb/">Popular Course</a>
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/en-gb/london/middlesex-university-/">View Profile</a>
+                                       </div>
+                                      </div>
+                                  </div>
+                                  </div> -->
+                                                              
+                              <div class="col-md-6">
+                                  <div class="list_box">
+                                   <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="col-md-12">
+                                              <div class="logoBx">
+                                                                                                             <img src="https://www.totalstudentcare.com/uploades/institution/original/nun.jpg" alt="Northumbria University" itemprop="image" style="width: 300px;height: 180px;"> 
+                                                                                                 </div>
+                                              
+                                                 <h4 style="text-align: center;"><a href="https://www.totalstudentcare.com/university-and-college/en-gb/london/northumbria-university/">Northumbria University</a></h4>
+                                              
+                                              
+                                              <div class="col-md-12">
+                                                     <table class="table table-bordered">
+                                                         <tbody><tr>
+                                                             <td>Main Camplus Location</td>
+                                                             <td>London, United Kingdom</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>About Northumbria University</td>
+                                                             <td> <a class="" href="https://www.totalstudentcare.com/university-and-college/en-gb/london/northumbria-university/">View Profile</a></td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Scholarships</td>
+                                                             <td>Available</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Find Courses</td>
+                                                             <td><a href="https://www.totalstudentcare.com/university-and-college/northumbria-university/courses/en-gb/">View all (38)</a></td>
+                                                         </tr>
+                                                         <!-- <tr>
+                                                             <td>Submit Query</td>
+                                                             <td><a href="">Link</a></td>
+                                                         </tr> -->
+                                                     </tbody></table>
+                                                 </div>
+                                              
+                                           </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              
+<!--                                 <div class="list_box">
+                                  <div class="row clearfix">
+                                      <div class="col-md-8">
+                                  <h2><a href="https://www.totalstudentcare.com/university-and-college/en-gb/london/northumbria-university/">Northumbria University</a></h2>
+                                  </div>
+                                  <div class="col-md-4 text-right">
+                                   <a href="https://www.totalstudentcare.com/university-and-college/northumbria-university/courses/en-gb/">View all courses (38)</a>
+                                  </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      
+                                                                                    <div class="col-md-4">
+                                                 <img src="https://www.totalstudentcare.com/uploades/institution/original/nun.jpg" alt="Northumbria University" itemprop="image" /> 
+                                           </div>
+                                                                                 
+                                       <div class="col-md-8">
+                                       <div class="text-left">
+                                           <a class="btn btn-info" href="javascript:void(0)">University</a>
+                                       
+                                           <a class="btn btn-gray" href="javascript:void(0)">United Kingdom</a>
+                                           <a class="btn btn-gray" href="javascript:void(0)">London</a>
+                                           
+                                       </div>
+                                       <div class="list_descreption">
+                                      Northumbria University is a research-rich, business-focused, professional university with a global reputation for academic excellence. Northumbria is one of the largest universities in the UK, attracting more than 33,000 students from 135 countries.
+...
+                                       </div>
+                                       <div class="text-right">
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/northumbria-university/course-popular/en-gb/">Popular Course</a>
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/en-gb/london/northumbria-university/">View Profile</a>
+                                       </div>
+                                      </div>
+                                  </div>
+                                  </div> -->
+                                                              
+                              <div class="col-md-6">
+                                  <div class="list_box">
+                                   <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="col-md-12">
+                                              <div class="logoBx">
+                                                                                                             <img src="https://www.totalstudentcare.com/uploades/institution/original/Queen_University_Belfast.jpg" alt="Queen's University Belfast" itemprop="image" style="width: 300px;height: 180px;"> 
+                                                                                                 </div>
+                                              
+                                                 <h4 style="text-align: center;"><a href="https://www.totalstudentcare.com/university-and-college/en-gb/befast/queen-s-university-belfast/">Queen's University Belfast</a></h4>
+                                              
+                                              
+                                              <div class="col-md-12">
+                                                     <table class="table table-bordered">
+                                                         <tbody><tr>
+                                                             <td>Main Camplus Location</td>
+                                                             <td>Belfast, United Kingdom</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>About Queen's University Belfast</td>
+                                                             <td> <a class="" href="https://www.totalstudentcare.com/university-and-college/en-gb/befast/queen-s-university-belfast/">View Profile</a></td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Scholarships</td>
+                                                             <td>Available</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Find Courses</td>
+                                                             <td><a href="https://www.totalstudentcare.com/university-and-college/queen-s-university-belfast/courses/en-gb/">View all (0)</a></td>
+                                                         </tr>
+                                                         <!-- <tr>
+                                                             <td>Submit Query</td>
+                                                             <td><a href="">Link</a></td>
+                                                         </tr> -->
+                                                     </tbody></table>
+                                                 </div>
+                                              
+                                           </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              
+<!--                                 <div class="list_box">
+                                  <div class="row clearfix">
+                                      <div class="col-md-8">
+                                  <h2><a href="https://www.totalstudentcare.com/university-and-college/en-gb/befast/queen-s-university-belfast/">Queen's University Belfast</a></h2>
+                                  </div>
+                                  <div class="col-md-4 text-right">
+                                   <a href="https://www.totalstudentcare.com/university-and-college/queen-s-university-belfast/courses/en-gb/">View all courses (0)</a>
+                                  </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      
+                                                                                    <div class="col-md-4">
+                                                 <img src="https://www.totalstudentcare.com/uploades/institution/original/Queen_University_Belfast.jpg" alt="Queen's University Belfast" itemprop="image" /> 
+                                           </div>
+                                                                                 
+                                       <div class="col-md-8">
+                                       <div class="text-left">
+                                           <a class="btn btn-info" href="javascript:void(0)">University</a>
+                                       
+                                           <a class="btn btn-gray" href="javascript:void(0)">United Kingdom</a>
+                                           <a class="btn btn-gray" href="javascript:void(0)">Belfast</a>
+                                           
+                                       </div>
+                                       <div class="list_descreption">
+                                      Dating back to 1845, Queen&#39;s is the 9th oldest university in the UK &ndash; founded by Queen Victoria the University has been providing tertiary-level education over 170 years.
+
+Queen&#39;s historic campus is located in the attractive, leafy su...
+                                       </div>
+                                       <div class="text-right">
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/queen-s-university-belfast/course-popular/en-gb/">Popular Course</a>
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/en-gb/befast/queen-s-university-belfast/">View Profile</a>
+                                       </div>
+                                      </div>
+                                  </div>
+                                  </div> -->
+                                                              
+                              <div class="col-md-6">
+                                  <div class="list_box">
+                                   <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="col-md-12">
+                                              <div class="logoBx">
+                                                                                                             <img src="https://www.totalstudentcare.com/uploades/institution/original/Solent-Logo.png" alt="Solent University" itemprop="image" style="width: 300px;height: 180px;"> 
+                                                                                                 </div>
+                                              
+                                                 <h4 style="text-align: center;"><a href="https://www.totalstudentcare.com/university-and-college/en-gb/southampton/solent-university/">Solent University</a></h4>
+                                              
+                                              
+                                              <div class="col-md-12">
+                                                     <table class="table table-bordered">
+                                                         <tbody><tr>
+                                                             <td>Main Camplus Location</td>
+                                                             <td>Southampton, United Kingdom</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>About Solent University</td>
+                                                             <td> <a class="" href="https://www.totalstudentcare.com/university-and-college/en-gb/southampton/solent-university/">View Profile</a></td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Scholarships</td>
+                                                             <td>Available</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Find Courses</td>
+                                                             <td><a href="https://www.totalstudentcare.com/university-and-college/solent-university/courses/en-gb/">View all (0)</a></td>
+                                                         </tr>
+                                                         <!-- <tr>
+                                                             <td>Submit Query</td>
+                                                             <td><a href="">Link</a></td>
+                                                         </tr> -->
+                                                     </tbody></table>
+                                                 </div>
+                                              
+                                           </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              
+<!--                                 <div class="list_box">
+                                  <div class="row clearfix">
+                                      <div class="col-md-8">
+                                  <h2><a href="https://www.totalstudentcare.com/university-and-college/en-gb/southampton/solent-university/">Solent University</a></h2>
+                                  </div>
+                                  <div class="col-md-4 text-right">
+                                   <a href="https://www.totalstudentcare.com/university-and-college/solent-university/courses/en-gb/">View all courses (0)</a>
+                                  </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      
+                                                                                    <div class="col-md-4">
+                                                 <img src="https://www.totalstudentcare.com/uploades/institution/original/Solent-Logo.png" alt="Solent University" itemprop="image" /> 
+                                           </div>
+                                                                                 
+                                       <div class="col-md-8">
+                                       <div class="text-left">
+                                           <a class="btn btn-info" href="javascript:void(0)">University</a>
+                                       
+                                           <a class="btn btn-gray" href="javascript:void(0)">United Kingdom</a>
+                                           <a class="btn btn-gray" href="javascript:void(0)">Southampton</a>
+                                           
+                                       </div>
+                                       <div class="list_descreption">
+                                      ...
+                                       </div>
+                                       <div class="text-right">
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/solent-university/course-popular/en-gb/">Popular Course</a>
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/en-gb/southampton/solent-university/">View Profile</a>
+                                       </div>
+                                      </div>
+                                  </div>
+                                  </div> -->
+                                                              
+                              <div class="col-md-6">
+                                  <div class="list_box">
+                                   <div class="row clearfix">
+                                      <div class="col-md-12">
+                                          <div class="col-md-12">
+                                              <div class="logoBx">
+                                                                                                             <img src="https://www.totalstudentcare.com/uploades/institution/original/stmarys_twick.png" alt="St Mary's University Twickenham " itemprop="image" style="width: 300px;height: 180px;"> 
+                                                                                                 </div>
+                                              
+                                                 <h4 style="text-align: center;"><a href="https://www.totalstudentcare.com/university-and-college/en-gb/london/st-mary-s-university-twickenham-/">St Mary's University Twickenham </a></h4>
+                                              
+                                              
+                                              <div class="col-md-12">
+                                                     <table class="table table-bordered">
+                                                         <tbody><tr>
+                                                             <td>Main Camplus Location</td>
+                                                             <td>London, United Kingdom</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>About St Mary's University Twickenham </td>
+                                                             <td> <a class="" href="https://www.totalstudentcare.com/university-and-college/en-gb/london/st-mary-s-university-twickenham-/">View Profile</a></td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Scholarships</td>
+                                                             <td>Available</td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>Find Courses</td>
+                                                             <td><a href="https://www.totalstudentcare.com/university-and-college/st-mary-s-university-twickenham-/courses/en-gb/">View all (0)</a></td>
+                                                         </tr>
+                                                         <!-- <tr>
+                                                             <td>Submit Query</td>
+                                                             <td><a href="">Link</a></td>
+                                                         </tr> -->
+                                                     </tbody></table>
+                                                 </div>
+                                              
+                                           </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              
+<!--                                 <div class="list_box">
+                                  <div class="row clearfix">
+                                      <div class="col-md-8">
+                                  <h2><a href="https://www.totalstudentcare.com/university-and-college/en-gb/london/st-mary-s-university-twickenham-/">St Mary's University Twickenham </a></h2>
+                                  </div>
+                                  <div class="col-md-4 text-right">
+                                   <a href="https://www.totalstudentcare.com/university-and-college/st-mary-s-university-twickenham-/courses/en-gb/">View all courses (0)</a>
+                                  </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                      
+                                                                                    <div class="col-md-4">
+                                                 <img src="https://www.totalstudentcare.com/uploades/institution/original/stmarys_twick.png" alt="St Mary's University Twickenham " itemprop="image" /> 
+                                           </div>
+                                                                                 
+                                       <div class="col-md-8">
+                                       <div class="text-left">
+                                           <a class="btn btn-info" href="javascript:void(0)">University</a>
+                                       
+                                           <a class="btn btn-gray" href="javascript:void(0)">United Kingdom</a>
+                                           <a class="btn btn-gray" href="javascript:void(0)">London</a>
+                                           
+                                       </div>
+                                       <div class="list_descreption">
+                                      Study in London: it&#39;s not too late to apply.
+...
+                                       </div>
+                                       <div class="text-right">
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/st-mary-s-university-twickenham-/course-popular/en-gb/">Popular Course</a>
+                                       <a class="btn btn-primary" href="https://www.totalstudentcare.com/university-and-college/en-gb/london/st-mary-s-university-twickenham-/">View Profile</a>
+                                       </div>
+                                      </div>
+                                  </div>
+                                  </div> -->
+                                                              
+                            </div>
+                          <!--Product Grid End-->
+                          
+<div style="clear:both">&nbsp;</div>        
+
+
+                                                      <div class="row pagination-bar d-block text-center margin_bot_30">
+                              <!-- <ul class="pagination pagination-lg topspace0"> -->
+                              <ul class="pagination ">
+                                  
+                                  
+                                  <li class="disabled"><a href="javascript:void(0)">«</a></li>	
+                                  
+                                  
+                                  <li><a class="active" href="https://www.totalstudentcare.com/university-and-college/page/1/">1</a></li><li><a class="" href="https://www.totalstudentcare.com/university-and-college/page/2/">2</a></li><li><a class="" href="https://www.totalstudentcare.com/university-and-college/page/3/">3</a></li>                                    
+                                  
+                                  <li><a href="https://www.totalstudentcare.com/university-and-college/page/2/">»</a></li>	
+                              </ul>
+                          </div>
+                          
+                                                      
+                          
