@@ -68,7 +68,7 @@ button, input, optgroup, select, textarea {
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
-.btn-primary {
+.btn .btn-primary {
     color: #fff;
     background-color: #002568;
     border-color: #002568;
@@ -275,3 +275,7 @@ ul li, ol li {
         border-left-color: rgb(221, 221, 221);
 }
 
+.pagination-bar {
+    background-color: #232f3e;
+    color: #fff;
+}
