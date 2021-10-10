@@ -1,9 +1,15 @@
 @import url("unv.css");
 @import url("cont.css");
 @import url("service.css");
+@import url("mediascreen.css");
 
 *, ::after, ::before {
     box-sizing: border-box;
+}
+*{
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-emphasis: left;
 }
 
 :root {
@@ -42,12 +48,10 @@ body {
     margin: 0;
     width:100%;
     margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    text-align: left;
-    background-color: #fff;
+    background-color: #f1f1f1;
 }
 a{
     text-decoration: none;
@@ -65,6 +69,7 @@ header {
     transition: all ease-out .5s;
     background-color: #fff;
     top: 0;
+    border: 1px solid white;
 }
 
 
@@ -74,15 +79,16 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 .top{
-    height: 40px;
+    height: 56px;
 }
 
 section .top-bar{
     background-color: rgb(20, 160, 146);
-    width: 100%;
+    height: max-content;
     color: white;
     position: fixed;
     z-index: 4;
+    width: 100%;
 }
 
 .top-bar a{
@@ -96,26 +102,24 @@ section .top-bar{
 
 .top-bar-left{
     float: left;
-    
-    padding-left: 100px;
+    padding-left: 10%;
 }
 
 .top-bar-right{
     float: right;
-    height: 50px;
+    height: 56px;
     padding-top: 15px;
-    padding-right: 70px;
+    padding-right: 5%
 }
 
 /*-------------------------------------------Nav----------------------------------------------------*/
 
 .Nav{
-    height: 100px;
+    height: 90px;
 }
 .nav-bar{
     float: inline-start;
-    height: 0;
-    margin-left: 100px;
+    padding-left: 22%;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -125,21 +129,11 @@ section .top-bar{
     max-width: 1140px;
 }
 
-.nav-bar ::after{
-    display: block;
-clear: both;
-content: "";
-visibility: hidden;
-display: block;
-font-size: 0;
-content: " ";
-clear: both;
-height: 0;
-}
+
 
 .logo{
-    padding-right: 100px;
-    padding-top: 20px;
+    padding-top: 10px;
+    margin-right: 40px;
 }
 
 .nav-bar-link{
@@ -164,6 +158,10 @@ height: 0;
     font-weight: bold;
 }
 
+#menu-btn{
+    display: none;
+}
+
 /*---------------------------------------------SEARCH-BAR-----------------------------------------*/
 
 .search-bar{
@@ -185,10 +183,7 @@ height: 0;
 }
 
 .search{
-    position: absolute;
-    top: 20px;
-    left: 550px;
-    padding-top: 60px;
+    float: right;
 }
 
 .search h2{
@@ -222,22 +217,23 @@ height: 0;
 
 .admission{
     background-color: rgba(2, 22, 22, 0.884);
-    position: relative;
     color: white;
-    height: 230px;
     font-family: sans-serif;
+    height: 250px
 }
 
 .adm-logo{
+    width: 300px;
+    height: 0;
     padding-left: 100px;
     padding-top: 20px;
 }
 
 .adm{
-    position: absolute;
-    top: 20px;
-    left: 400px;
-    width: 800px;
+    float: right;
+    width: 900px;
+    padding-right: 200px;
+    padding-left: 0px;
 }
 
 .adm-text{
@@ -283,25 +279,28 @@ height: 0;
 /*--------------------------------------------------TSC_MARK--------------------------------------------*/
 
 .tsc-mark{
-    height: 500px;
-    position: relative;
+    height: 530px;
     background-color: #fdfdfd;
     font-family: sans-serif;
     line-height: 25px;
+    margin: 5%;
+    border-radius: 5px;
 }
 
 .tsc-mark-image{
-    padding-left: 150px;
-    padding-top: 60px;
+    float: left;
+    width: 247px;
+    padding-top: 70px;
+    margin-left: 13%;
 
 }
 
 .tsc-mark-text{
-    position: absolute;
-    top: 70px;
-    left:500px;
+   float: right;
+   width: 650px;
+   padding-top: 40px;
     opacity: 0.6;
-    padding-right: 150px;
+    padding-right: 10%;
 }
 
 
@@ -309,7 +308,6 @@ height: 0;
 
 
 .mission{
-    position: relative;
     height: 430px;
     background-color: #f1f1f1;
     line-height: 25px;
@@ -341,17 +339,19 @@ height: 0;
 
 .mission-text{
     font-family: sans-serif;
-    margin-right: 800px;
+    float: left;
+    width: 700px;
     opacity: 0.6;
-    padding-left: 150px;
+    padding-left: 11%;
     padding-top: 15px;
 }
 
 .mission-image{
-    position: absolute;
-    top: 80px;
-    left: 700px;
-    margin-right: 150px;
+    float: right;
+    width: 450px;
+    padding-right: 5%;
+    margin-top: -4%;
+    border-radius: 10px;
 }
 
 
@@ -361,21 +361,26 @@ height: 0;
 .vision{
     background-color: #fdfdfd;
     font-family: sans-serif;
-    position: relative;
+    height: 500px;
+    margin: 5%;
+    border-radius: 5px;
 }
 
 
 
 .vision-image{
-    margin-left: 100px;
-    padding-top: 100px;
+    float: left;
+    width: 450px;
+    margin-left: 2%;
+    padding-left: 5%;
+    margin-top: 100px;
 }
 
 .vision-text{
-    position: absolute;
-    top: 0px;
-    left: 700px;
-    right: 100px;
+    float: right;
+    width: 600px;
+    padding-right: 4%;
+    padding-top: 20px;
 }
 
 .vision-text-title{
@@ -414,8 +419,9 @@ height: 0;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    width: 1250px;
-    margin-left: 45px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 40px;
 }
 .values-title{
     text-align: center !important;
@@ -446,15 +452,14 @@ height: 0;
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-right: 5px;
-    margin-left: 5px;
     text-align: center !important;
+    
 }
 
 .col-md-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
-    max-width: 32.333333%;
+    max-width: 31.333333%;
     margin: 0 5px;
 }
 
@@ -464,12 +469,13 @@ height: 0;
     border: 1px solid #0000001f;
     padding: 5px;
     margin: 35px 0;
-    height: 150px;
+    height: 180px;
     position: relative;
     text-align: center;
     box-shadow: -5px 5px -50px #000;
     box-shadow: -5px 5px 12px #00000012;
     border-radius: 9px;
+    background: white;
 }
 
 .box img {
@@ -480,7 +486,6 @@ height: 0;
     right: 0;
     background-color: #fff;
     border: 1px solid #0000000d;
-    width: 80px;
     height: 80px;
     border-radius: 8px;
     padding: 15px;
@@ -588,8 +593,8 @@ white-color2::after {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .whborderbottom1 {
@@ -702,8 +707,8 @@ color: inherit;
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .country-section h5 span, .news h5 span {
@@ -851,6 +856,13 @@ section {
     color:white !important;
 }
 
+
+/*-----------------------------------------------------*/
+
+.admistion-form{
+    max-width: 100% !important;
+    padding: 5% 20%;
+}
 
 /*------------------------------------------------------------FOUTER-----------------------------------------*/
 

@@ -1,3 +1,5 @@
+
+
 .u-detail {
     padding: 10px 20px 20px 20px;
 }
@@ -33,6 +35,8 @@
     box-shadow: 0px 4px 20px rgba(1, 47, 111, 0.071);
     padding: 50px 30px;
     position: relative;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .contact-us-form h4 {

@@ -1,0 +1,256 @@
+
+
+@media  screen and (max-width: 1098px) {
+    body{
+        display: block;
+    }
+
+    .text h1{
+        width: 1098px;
+    }
+
+    .search{
+        width: 1098px;
+        margin-top: 80px;
+        align-items: center;
+        position: absolute;
+        left: 25%;
+    }
+    .adm-logo{
+        display: none;
+    }
+
+    .tsc-mark{
+        height: max-content;
+    }
+
+    .tsc-mark-image a img{
+        width: 200px;
+        height: 300px;
+    }
+    .tsc-mark-text {
+        width: 800px;
+       padding-right: 20px;
+    }
+
+    .mission-image{
+        display: none;
+    }
+
+
+    .vision-image img{
+        width: 200px;
+        height: 150px;
+    }
+
+    .vision-text{
+        float: left;
+        width: 1098px;
+    }
+
+    .col-md-4{
+        max-width: 1098px;
+    }
+}
+
+
+/*===============================================================================*/
+
+
+@media  screen and (max-width: 338px){
+
+    *{
+        font-size: 15px !important;
+    }
+
+    section .top-bar{
+        width: 338px;
+    }
+    .top-bar-left{
+        display: none;
+    }
+    .top-bar-right{
+        float: left;
+        padding: 0;
+    }
+
+    
+    .logo{
+        display: none;
+    }
+    .nav-bar-link a{
+        display:inline !important;
+        font-size: 9px !important;
+        padding: 10px !important;
+    }
+    .nav-bar-link{
+        width: 338px !important;
+        padding: 0px !important;
+    }
+    .nav-bar{
+        width: 338px!important;
+        margin-left: 0px!important;
+    }
+
+    .text{
+        margin: 0!important;
+        padding: 50px 20px !important;
+        font-size: 15px !important;
+    }
+    .text h1{
+        width: 338px;
+    }
+
+    .search{
+        width: 338px !important;
+        margin: 0 !important;
+        padding: 40px 0;
+    }
+
+    .search h2{
+        padding: 0 !important;
+    }
+
+    .search-bar-boutton{
+        width: 338px !important;
+        float: left !important;
+    }
+
+    .recherche{
+        width: 170px !important;
+        height: 25px !important;
+    }
+    .boutton{
+        width: 70px !important;
+        height: 27px !important;
+    }
+
+    .adm{
+        width: 338px !important;
+        padding: 10px !important;
+    }
+    .adm-text h2{
+        margin: 0 !important;
+        font-size: 15px !important;
+        text-align: center;
+    }
+    .adm-text p{
+        font-size: 15px;
+    }
+
+    .adm-link a{
+        width: 80px !important;
+        height: 30px !important;
+        padding: 5px !important;
+        margin: 5px !important;
+    }
+
+
+
+    .col-lg-2{
+        max-width: 43% !important;
+    }
+}
+
+/*===================================================================*/
+
+@media  screen and (max-width: 1210px){
+
+
+    .mon-image{
+        display: none;
+    }
+    .mon-text{
+        width: 100% !important;
+        padding: 50px !important;
+    }
+
+    .adm-logo{
+        display: none;
+    }
+}
+
+/*======================================================================*/
+
+@media  screen and (max-width: 1045px){
+
+
+    .adm{
+       width: 100% !important;
+       padding: 0 10% !important;
+    }
+    .nav-bar{
+        padding-left:90px !important;
+    }
+    .m-video{
+        max-width: 100% ;
+        flex: none;
+    }
+
+    .m-text{
+        width: 190% ;
+    }
+    .box img{
+        height: 60px !important;
+    }
+    .box{
+        height: 150px !important;
+    }
+    .box h5{
+        font-size:small !important;
+    }
+}
+
+/*==========================================================================*/
+
+@media  screen and (max-width: 860px){
+
+    .col-md-4 {
+        flex: 100% !important;
+        max-width: 100% !important;
+    }
+    .col-md-6{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .col-lg-5{
+        flex: 100%;
+        max-width: 100%;
+        
+
+    }
+    .col-lg-7{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    /*---------------------------------------*/
+
+    .top{
+        display: none;
+    }
+    #menu-btn{
+        display: inline-block !important;
+    }
+    .nav-bar-link{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 30rem;
+        box-shadow: 20px;
+        border-radius: .5rem;
+        background: rgb(20, 160, 146);
+    }
+    .nav-bar-link a{
+        font-size: 2rem;
+        margin: 2rem 2rem;
+        display:list-item;
+    }
+
+    .nav-bar-link .active{
+        right: 2rem;
+        transition: .4 linear;
+    }
+
+
+}
